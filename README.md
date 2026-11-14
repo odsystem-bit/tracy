@@ -454,11 +454,6 @@ Propriétaire - Mantota © 2026
 
 ## 🙏 Remerciements
 
-- OpenAI pour GPT
-- Laravel pour le framework
-- Flutter pour le mobile
-- La communauté open-source
-
 ---
 
 **Mantota - Le commerce africain, réinventé.** 🚀
