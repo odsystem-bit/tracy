@@ -439,7 +439,7 @@ Propriétaire - Mantota © 2026
 ## 👥 Équipe
 
 - **Fondateur:** Yanou
-- **Architecture:** Devin AI Assistant
+- **Architecture:** Stan
 - **Développement:** En cours
 
 ---
