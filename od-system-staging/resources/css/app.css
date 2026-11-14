@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ══════ Mantota Design System — Global ══════ */
+
+@layer base {
+    :root {
+        --mantota-teal: #0BBFA0;
+        --mantota-teal-dark: #07856F;
+        --mantota-teal-pale: #E6F7F4;
+        --mantota-coral: #FF6B35;
+        --mantota-whatsapp: #25D366;
+        --mantota-bg: #FFFFFF;
+        --mantota-surface-1: #F8F9FA;
+        --mantota-surface-2: #F1F3F5;
+        --mantota-surface-3: #E9ECEF;
+        --mantota-surface-4: #DEE2E6;
+        --mantota-grey-1: #212529;
+        --mantota-grey-2: #6C757D;
+        --mantota-grey-3: #495057;
+        --mantota-grey-4: #868E96;
+        --mantota-error: #EF4444;
+        --mantota-border: rgba(0, 0, 0, 0.06);
+    }
+
+    body {
+        font-family: 'Plus Jakarta Sans', Figtree, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+@layer components {
+    /* ── Boutons ── */
+    .btn-mantota {
+        @apply inline-flex items-center justify-center gap-2 rounded-mantota bg-mantota-teal px-6 py-3.5 text-sm font-bold text-white transition-all hover:bg-mantota-teal-dark active:scale-[0.98];
+    }
+
+    .btn-mantota-outline {
+        @apply inline-flex items-center justify-center gap-2 rounded-mantota border-2 border-mantota-teal bg-transparent px-6 py-3.5 text-sm font-bold text-mantota-teal transition-all hover:bg-mantota-teal-pale active:scale-[0.98];
+    }
+
+    .btn-mantota-coral {
+        @apply inline-flex items-center justify-center gap-2 rounded-mantota bg-mantota-coral px-6 py-3.5 text-sm font-bold text-white transition-all hover:brightness-95 active:scale-[0.98];
+    }
+
+    .btn-mantota-ghost {
+        @apply inline-flex items-center justify-center gap-2 rounded-mantota px-4 py-2.5 text-sm font-semibold text-grey-2 transition-all hover:bg-surface-2 hover:text-grey-1;
+    }
+
+    /* ── Cards ── */
+    .card-mantota {
+        @apply rounded-mantota-card bg-white p-5 shadow-mantota;
+    }
+
+    .card-mantota-hover {
+        @apply rounded-mantota-card bg-white p-5 shadow-mantota transition-all hover:shadow-mantota-md hover:-translate-y-0.5;
+    }
+
+    /* ── Inputs ── */
+    .input-mantota {
+        @apply w-full rounded-mantota border-0 bg-surface-1 px-4 py-3.5 text-sm text-grey-1 placeholder:text-grey-4 focus:bg-white focus:ring-2 focus:ring-mantota-teal focus:outline-none transition-all;
+    }
+
+    .label-mantota {
+        @apply mb-1.5 block text-sm font-semibold text-grey-2;
+    }
+
+    /* ── Badges ── */
+    .badge-mantota {
+        @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold;
+    }
+
+    .badge-teal {
+        @apply badge-mantota bg-mantota-teal-pale text-mantota-teal-dark;
+    }
+
+    .badge-coral {
+        @apply badge-mantota bg-orange-50 text-mantota-coral;
+    }
+
+    .badge-grey {
+        @apply badge-mantota bg-surface-2 text-grey-2;
+    }
+
+    .badge-whatsapp {
+        @apply badge-mantota bg-green-50 text-mantota-whatsapp;
+    }
+
+    /* ── Sections ── */
+    .section-mantota {
+        @apply mx-auto max-w-7xl px-4 sm:px-6;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /vendor/
+Disallow: /admin/
+Disallow: /influencer/
+Disallow: /api/
+Disallow: /build/
+
+Sitemap: https://mantota.com/sitemap.xml

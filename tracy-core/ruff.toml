@@ -1,0 +1,11 @@
+[lint]
+# Désactiver les règles K104 et autres règles trop strictes
+select = ["E", "F", "I", "N", "W"]
+ignore = [
+    "K104",  # Unnecessary dunder call - à désactiver
+    "K",    # Toutes les règles de la catégorie K
+]
+
+# Permettre les règles de base
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]  # Imports non utilisés dans __init__
